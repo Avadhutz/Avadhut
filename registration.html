@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Registration</title>
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <script src="registration.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register to Write a New Blog Post</h2>
+        <form id="registration-form" action="register.php" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-title">Blog Title</label>
+                <input type="text" id="blog-title" name="blogTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-content">Blog Content</label>
+                <textarea id="blog-content" name="blogContent" required></textarea>
+            </div>
+            <button type="submit">Register and Write Blog</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
